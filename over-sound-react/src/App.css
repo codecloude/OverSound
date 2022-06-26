@@ -1,0 +1,12 @@
+.App {
+  display: grid;
+  grid-template-rows: 75px max-content;
+  grid-template-columns: 100%;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  height: 4000px;
+  
+}
+
+
