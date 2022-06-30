@@ -7,7 +7,7 @@ import profile from "../image/profile.png";
 export const DivHeaderSC = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: black;
+  background-color: #121214;
   width: 100vw;
   height: 75px;
   margin: 0 auto;

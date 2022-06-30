@@ -53,6 +53,7 @@ export const TypeCardSC = styled.h1`
   color: #8a8a8a;
   text-align: start;
   padding-left: 10px;
-  position: absolute;
-  bottom: 10px
+  margin-top: 11px;
+  /* position: absolute;
+  bottom: 10px */
 `;

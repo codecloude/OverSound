@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export const DivRowsHomeSC = styled.div`
   display: grid;
   grid-template-rows: repeat(auto-fit, max-content);
+  grid-gap: 100px;
 `;
 
 export const DivWrapHomeSC = styled.div`
@@ -81,8 +82,6 @@ export const DivBoxTextSC = styled.div`
   margin: 0 auto;
   //border: 2px solid blue;
   justify-content: start;
-  margin-top: 70px;
-  margin-bottom: 25px;
 `;
 
 export const TitlePlusSC = styled.h1`
@@ -90,6 +89,11 @@ export const TitlePlusSC = styled.h1`
   text-align: start;
   font-size: 32px;
   font-weight: 600;
+`;
+
+export const DivRowsPlusesBox = styled.div`
+  display: grid;
+  grid-template-rows: repeat(auto-fit, max-content);
 `;
 
 export const DivBoxPlusesSC = styled.div`
@@ -117,7 +121,6 @@ export const DivBoxPlusesSC = styled.div`
     //grid-template-rows: repeat(4, max-content);
     grid-gap: 40px;
   }
-  margin-bottom: 100px;
 `;
 
 export const DivPlusBoxSC = styled.div`
@@ -205,14 +208,14 @@ export const DescWhatNewSC = styled.h3`
   text-align: start;
   font-weight: 400;
   font-size: 20px;
-  color: #9A9A9A;
+  color: #9a9a9a;
 `;
 
 export const DivSoundCardBoxSC = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, 170px);
   //grid-template-rows: repeat(auto-fit, max-content);
-  grid-gap: 15px;
+  grid-gap: 20px;
   width: 95vw;
   max-width: 1200px;
   height: 100%;
@@ -221,4 +224,24 @@ export const DivSoundCardBoxSC = styled.div`
   //border: 2px solid black;
   justify-content: space-around;
   //margin-bottom: 200px;
+`;
+
+export const DivBoxTutorialsSC = styled.div`
+  display: grid;
+  grid-template-rows: repeat(auto-fit, max-content);
+  width: 95vw;
+  max-width: 1200px;
+  height: 100%;
+  grid-gap: 20px;
+  position: relative;
+  margin: 0 auto;
+  //border: 2px solid blue;
+  align-items: center;
+  //padding-bottom: 100px;
+`;
+
+export const DivItemsVideoSC = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 370px);
+  grid-gap: 20px;
 `;
