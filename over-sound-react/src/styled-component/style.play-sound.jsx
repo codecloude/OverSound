@@ -42,7 +42,7 @@ export const DateAddSC = styled.h3`
 
 export const DivPlayerSC = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr max-content;
   /* width: 100%;
   height: 100%;
   justify-content: space-between;
@@ -51,6 +51,10 @@ export const DivPlayerSC = styled.div`
   padding-bottom: 10px;
   margin-right: 50px; */
 `;
+
+export const ButtonDownloadSC = styled.button`
+  
+`
 
 export const DivTagsSC = styled.div`
   display: grid;

@@ -13,24 +13,15 @@ import {
 } from "../../styled-component/style.play-sound";
 
 const WaveForm = ({index, path}) => {
-  //const [srcMusic, setSrcMusic] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
   const [waveSurfer, setWaveSurfer] = useState(null);
-  const [idTrack, setIdTrack] = useState('');
   const [pathTrack, setPathTrack] = useState('');
-
-  // useEffect(() => {
-  //   for (let index = 0; index < items.length; index++) {
-  //     setSrcMusic(items[index].src);
-  //   }
-  // }, []);
 
   useEffect(() => {
     setPathTrack(path);
-    setIdTrack(index);
     setWaveSurfer(
       WaveSurfer.create({
-        container: `#waveform${idTrack}`,
+        container: `#waveform${index}`,
         backend: "WebAudio",
         barWidth: 2.5,
         barRadius: 1.5,
@@ -68,8 +59,8 @@ const WaveForm = ({index, path}) => {
         <DivButtonSC onClick={isPlaying ? stopButton : togglePlayPause}>
           {isPlaying ? <PauseButtonSC /> : <PlayButtonSC />}
         </DivButtonSC>
-        <WaveMusicSC id={"waveform" + idTrack} />
-        <audio src={music} />
+        <WaveMusicSC id={"waveform" + index} />
+        {/* <audio src={pathTrack} /> */}
       </WaveformContianerSC>
     </>
   );
